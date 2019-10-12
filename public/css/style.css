@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+@import './weather/reset.css';
+@import './weather/screen_current.css';
+@import './weather/screen_week.css';
+@import './lib/animate.css';
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 300;
+}
+
+#weather-app {
+    overflow: hidden;
+}
+
+
+.weather-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.sunrise {
+    color:black;
+    background: linear-gradient(135deg, rgba(145, 200, 255, 1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.sunset {
+    color: white;
+    background: linear-gradient(135deg, rgb(11, 49, 86) 0%, rgb(140, 140, 140) 100%);
+}
+
+
+.screen-current,
+.screen-week {
+    width: 50vw;
+    min-height: 100vh;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

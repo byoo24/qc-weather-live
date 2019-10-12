@@ -1,0 +1,42 @@
+
+/* Screen One */
+.screen-current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.current-date {
+    font-size: 2em;
+    margin: 0;
+}
+
+.current-img {
+    width: 10em;
+}
+
+.current-temp {
+    font-size: 3em;
+    margin-left: -0.25em;
+}
+
+.current-temp::after {
+    content: "\00b0";
+    position: absolute;
+}
+
+.current-summary,
+.current-humidity,
+.current-wind {
+    display: block;
+    margin: 0 2em;
+}
+
+
+.summary {
+    margin: 2em 0;
+    line-height: 1.25em;
+    text-align: center;
+    width: 75%;
+}
